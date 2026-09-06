@@ -1,0 +1,55 @@
+# 딥러닝의 정석 with 파이토치 - 실습 환경 (macOS Apple Silicon / Python 3.12)
+#
+# numpy는 1.x로 고정합니다.
+#   - gym 0.26.2 가 np.bool8 을 사용 (numpy 2.0 에서 제거됨)
+#   - tensorflow 2.16.x 가 numpy<2 를 요구
+numpy==1.26.4
+
+# --- 핵심 프레임워크 ---
+torch
+torchvision
+torchaudio
+torchsummary
+
+# --- 데이터 / 시각화 ---
+matplotlib
+seaborn
+pandas
+scikit-learn
+scikit-optimize
+yfinance
+
+# --- 영상 처리 (8장, 5장) ---
+pillow
+opencv-python
+
+# --- 오디오 처리 (10장) ---
+librosa
+soundfile
+
+# --- 사전학습 모델 (7장, 9장, 11장) ---
+transformers
+timm
+
+# --- 모델 배포 / 최적화 (12장) ---
+# onnx 1.18+ 는 ml_dtypes>=0.5 를 요구하는데,
+# tensorflow 2.16.2 가 ml_dtypes~=0.3.1 로 고정하므로 충돌합니다.
+# onnx 1.17.0 은 ml_dtypes 에 의존하지 않아 두 패키지가 공존 가능합니다.
+onnx==1.17.0
+onnxruntime
+
+# --- 강화학습 (11장, CartPole-v1) ---
+# 노트북이 구(舊) Gym API 를 사용합니다:
+#   state = env.reset()                       -> 배열 반환 (0.26+ 는 튜플)
+#   next_state, reward, done, _ = env.step(a) -> 4-튜플 (0.26+ 는 5-튜플)
+# 0.25.2 가 이 API 의 마지막 버전이므로 고정합니다.
+gym==0.25.2
+pygame
+
+# --- 비교 예제용 (1장, 2장) ---
+tensorflow==2.16.2
+
+# --- 노트북 실행 환경 ---
+jupyterlab
+ipykernel
+ipywidgets

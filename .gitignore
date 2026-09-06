@@ -1,0 +1,140 @@
+# ============================================
+#  Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 가상환경 (용량이 크고 머신마다 달라서 올리지 않음)
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# ============================================
+#  Jupyter Notebook
+# ============================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*-checkpoint.ipynb
+profile_default/
+ipython_config.py
+
+# ============================================
+#  캐시 / 테스트 / 타입체커
+# ============================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ============================================
+#  데이터셋 (Kaggle LGG MRI 원본 - 직접 내려받기)
+# ============================================
+archive/
+data/
+datasets/
+raw/
+kaggle.json
+
+# 대용량 이미지 / 배열 파일
+*.tif
+*.tiff
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.nii
+*.nii.gz
+*.dcm
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ============================================
+#  모델 가중치 / 체크포인트 (개당 33MB)
+# ============================================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+*.safetensors
+checkpoints/
+weights/
+models/
+
+# ============================================
+#  학습 로그 / 실험 산출물
+# ============================================
+*.log
+logs/
+runs/
+outputs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+figures/
+*.png
+*.jpg
+*.jpeg
+
+# ============================================
+#  비밀 정보
+# ============================================
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# ============================================
+#  에디터 / OS
+# ============================================
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ============================================
+#  예외: 작고 재현에 필요한 결과물은 추적함
+# ============================================
+!index_split.csv
+!results.json
+!preprocess_meta.json
+!env.json
+!requirements.txt
+!requirements.lock.txt
+
+
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+archive/
+archive copy/
+env.json
+*.pth
+*.pt
