@@ -1,0 +1,14 @@
+{
+  "n_te_slice": 589,
+  "n_te_pat": 109,
+  "n_tr_pat": 110,
+  "n_overlap": 109,
+  "n_all": 110,
+  "missing": [
+    {
+      "patient": "TCGA_HT_8113_19930809",
+      "n_slice": 21
+    }
+  ],
+  "per_patient": 35.71818181818182
+}
